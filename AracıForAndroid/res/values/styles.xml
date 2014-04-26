@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:radioButtonStyle">@style/radioButtonAppTheme</item>
+        <item name="android:spinnerItemStyle">@style/spinnerDropDownItem</item>
+    </style>
+
+    <!-- Application theme. -->
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialogStyle</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="dialogStyle">
+        <item name="android:background">@drawable/border_button_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="radioButtonAppTheme" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/apptheme_btn_radio_holo_light</item>
+    </style>
+
+    <style name="spinnerDropDownItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="testo" parent="@android:style/Widget.DeviceDefault.DatePicker">
+        <item name="android:divider">@drawable/apptheme_btn_radio_holo_light</item>
+    </style>
+
+</resources>
